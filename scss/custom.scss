@@ -1,0 +1,106 @@
+// Set your own fonts
+$font-family-sans-serif:   'Spartan', ;
+$font-family-monospace:   'Montserrat', ;
+
+// Font sizes
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+
+// define your theme colours
+$body-bg: #f8f9fa;
+$body-color: #111;
+
+$primary:       rgb(80,45,168);
+$secondary:     rgb(248,79,119);
+$light:         #fff;
+$dark:          #222222;
+
+
+// set your navbar colours and spacing
+$navbar-light-color:                rgba($primary, .8);
+$navbar-light-hover-color:          rgba($primary, .5);
+$navbar-nav-link-padding-x:         1.5rem;
+$navbar-brand-font-size:            1.75rem;
+
+// decide how many columns you want and the default spacing
+$grid-columns:                12;
+$grid-gutter-width:           20px;
+
+// decide if you want shadows and rounded features
+$enable-caret:              true;
+$enable-rounded:            false;
+$enable-shadows:            true;
+
+
+// Grid breakpoints
+// Define the minimum dimensions at which your layout will change
+// very useful if your layout doesn't work at certain screen sizes 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Grid containers Define the maximum width of `.container` for different screen sizes.
+// Decide if you want a narrow container or a wide container - use 'container-fluid' for full width 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1250px
+);
+
+// Extend the bootstrap 'm' and 'p' classes eg 'pt-5' (padding top 5)
+// Very useful if you find yourself needing more spacing options
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3), // vanilla bootstrap usually stops here!
+    6: ($spacer * 6),
+    7: ($spacer * 12), // now we can do 'pt-12' (padding top 12)
+    8: ($spacer * 24)
+  ),
+  $spacers
+);
+
+// Add more width and height options
+$sizes: ();
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto, // vanilla bootstrap stops here
+    30: 30%,
+    80: 80%, // use 'w-80' to make an element fill 80% of the space it has available
+    90: 90%
+  ),
+  $sizes
+);
+
+// custom alert styles
+$alert-padding-y:                   2.0rem ;
+$alert-padding-x:                   1.5rem ;
+$alert-margin-bottom:               0.0rem ;
+
+
+// Bootstrap
+@import "bootstrap";

@@ -1,0 +1,110 @@
+{% extends "shared/base.html" %}
+
+{% block content %}
+
+<div class="container">
+<div class="row mt-5 mb-5">
+  <div class="col-md-4 d-flex">
+   <div class="shadow rounded bg-white py-5 px-5 mb-5 mb-md-0 d-flex flex-column flex-fill">
+    <h3 class="pb-5">Login</h3>
+    <form class="flex-fill">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" aria-describedby="passwordReset">
+        <small id="passwordReset" class="form-text text-muted">Forgot your password? Click <a href="#">here</a> to reset</small>
+      </div>
+        <button type="submit" class="btn btn-secondary btn-lg w-100">Login</button>
+      </form>
+      <div class="text-center">
+        Don't have an account? Sign up <a href="#">here</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-7 d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="pb-4">Bootstrap Flask</h1>
+    <img class="img-fluid pb-4" src="/static/hero.png">
+    <p>Something about our product and vision goes here.</p>
+    <a href="#" class="btn btn-outline-primary">Get started</a>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-12 text-center pt-3 pb-3">
+      <h1>Pricing</h1>
+      <p>All prices shown in AUD per month*</p>
+    </div>
+  </div>
+
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Free</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>10 users included</li>
+          <li>2 GB of storage</li>
+          <li>Email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for free</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="my-0 font-weight-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Contact us</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>30 users included</li>
+          <li>15 GB of storage</li>
+          <li>Phone and email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Contact us</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <table class="table w-100">
+        <th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </th>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
