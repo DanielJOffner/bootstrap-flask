@@ -21,6 +21,7 @@ Start two terminal windows and navigate to the root directory of this repository
 - Run ```nodemon -x "sass scss/custom.scss app/static/styles/custom_bootstrap.css" -e scss``` in the second window
 - Ensure to keep both processes running while you are developing your application
 
-# 4. Verify the webserver is running by going to 
+# 4. Verify the webserver is running
+- Open your browser and go to http://localhost:5000/
 
 
