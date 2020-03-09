@@ -25,4 +25,10 @@ Start two terminal windows and navigate to the root directory of this repository
 # 4. Verify the webserver is running
 - Open your browser and go to http://localhost:5000/
 
+# If you just want to compile your own Bootstrap
+- ensure you have npm v 6.5.0 installed
+- Run ```npm install -g sass``` on windows or ```sudo npm install -g sass``` on linux or MacOS
+- Edit the ```scss/custom.scss``` file
+- Run ```sass scss/custom.scss app/static/styles/custom_bootstrap.css``` from the root directory
+- Your custom Bootstrap .css will be generated at ```app/static/styles/custom_bootstrap.css```
 
