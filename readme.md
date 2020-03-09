@@ -25,6 +25,9 @@ Start two terminal windows and navigate to the root directory of this repository
 # 4. Verify the webserver is running
 - Open your browser and go to http://localhost:5000/
 
+# 5. Test the debugger
+- Add ```breakpoint()``` anywhere in the ```routes.py``` file and reload http://localhost:5000/
+
 # If you just want to compile your own Bootstrap
 - ensure you have npm v 6.5.0 installed
 - Run ```npm install -g sass``` on windows or ```sudo npm install -g sass``` on linux or MacOS
