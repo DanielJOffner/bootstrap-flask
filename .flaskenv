@@ -1,4 +1,2 @@
 FLASK_APP=main.py
-WERKZEUG_DEBUG_PIN=off
 FLASK_ENV=development
-PYTHONBREAKPOINT="wdb.set_trace"
